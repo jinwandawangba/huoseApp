@@ -1,0 +1,86 @@
+.am-tab-bar-bar{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+.am-tab-bar-bar{
+   
+    width: 100% !important;
+    position: fixed !important;
+    bottom: 0 !important;
+    right: 0 !important;
+  }
+  .topBar{
+      padding: 0 10px;
+  }
+  .topBar,.am-search,select{
+      display: flex;
+      justify-content:space-around;
+      align-items: center;
+      background-color: #00BC5B !important;
+      border: none;
+     
+      img{
+          width:20px;
+          height:20px;
+         
+      }
+  }
+  .tpCenter{
+      width: 80%;
+  }
+  .am-wingblank.am-wingblank-lg,.am-wingblank{
+      margin: 0 !important;
+  }
+  .clfy{
+      text-align: center;
+      margin-top: 10px;
+      .imgList{
+        width: 80px;
+        height: 60px;
+      
+       
+    }
+   
+  }
+  .am-flexbox{
+    padding-bottom: 10px !important;
+    border-bottom: 10px solid #F5F5F9 !important;
+  }
+  .loansList{
+    width: 40px;
+    height: 40px;
+  }
+  .houseEncy{
+      padding: 10px;
+  }
+  .am-flexbox.am-flexbox-justify-between {
+      padding: 10px !important;
+      border: none !important;
+  } 
+  .houseList .am-flexbox{
+      border-bottom:none !important;
+      display: flex;
+      align-items: flex-start !important;
+  }
+  .houseImg{
+      width: 100px;
+      height: 100px;
+   
+    
+  }
+  .centerContent{
+      margin-left: 20px;
+  }
+  .houseName{
+      font-size: 20px;
+      color:#0E0E0E;
+  }
+  .price{
+      color:#FF1A1A ;
+  }
+  .curCity{
+      width: 16%;
+  }
+ 
