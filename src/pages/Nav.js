@@ -27,7 +27,7 @@ export default class Nav extends Component {
                 { url: require('../assets/imgs/知识.png'), name: '知识' },
                 { url: require('../assets/imgs/扫一扫.png'), name: '扫一扫' },
             ],
-            hoseInfoList: []
+            houseInfoList: []
 
         };
     }
@@ -40,10 +40,12 @@ export default class Nav extends Component {
         }, 100);
         // 发送请求
         axios.get('http://localhost/gethouselist.php').then((res) => {
-
+           
             this.setState({
-                hoseInfoList: res.data
+                
+                houseInfoList: res.data
             })
+           
         })
 
         // 调用高德API函数
@@ -81,6 +83,7 @@ export default class Nav extends Component {
     }
 
     render() {
+        let { houseInfoList,data,loansList,imgUrl}=this.state
         return (
 
             <div>
@@ -101,7 +104,7 @@ export default class Nav extends Component {
                         beforeChange={(from, to) => console.log(`slide from ${from} to ${to}`)}
                         afterChange={index => console.log('slide to', index)}
                     >
-                        {this.state.data.map(val => (
+                        {data.map(val => (
                             <a
                                 key={val}
                                 href="http://www.alipay.com"
@@ -238,7 +241,7 @@ export default class Nav extends Component {
                 <WhiteSpace size="xs" />
                 <Flex wrap="wrap" justify="around">
                     {
-                        this.state.imgUrl.map((v, i) => {
+                        imgUrl.map((v, i) => {
 
                             return (
                                 <div className='clfy' key={i} >
@@ -259,7 +262,7 @@ export default class Nav extends Component {
                 <div className='houseEncy'>房产全百科，专业的买房攻略</div>
                 <Flex wrap="wrap" justify="around">
                     {
-                        this.state.loansList.map((v, i) => {
+                        loansList.map((v, i) => {
 
                             return (
                                 <div className='clfy' key={i}>
@@ -276,7 +279,7 @@ export default class Nav extends Component {
                 {/* 猜你喜欢  */}
 
                 {
-                    this.state.hoseInfoList.map((v, i) => {
+                    houseInfoList.map((v, i) => {
 
                         return (
                             <div className='houseList' key={i}>

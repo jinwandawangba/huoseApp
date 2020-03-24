@@ -8,3 +8,22 @@
 .hotCity{
     padding: 20px;
 }
+.leftList{
+    margin: 10px 0;
+}
+.rightList{
+    position: fixed;
+    top: 7%;
+    right: 0;
+    .childList{
+        margin: 10px 0;
+    }
+}
+.allContent,.leftBox{
+    height: 100%;
+    width: 100%;
+    ul{
+        margin: 0;
+        padding:20px;
+    }
+}
